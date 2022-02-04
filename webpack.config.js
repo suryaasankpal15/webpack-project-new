@@ -14,14 +14,20 @@ module.exports = {
     },
 
     module: {
-        loaders: [{
-            test: /\.(.js|jsx)$/,
+        rules: [{
+            test: /\.(js|jsx)$/,
             exclude: /node_modules/,
-            use: ['babel-loader']
-        }]
+            use: ['babel-loader','eslint-loader']
+        }//,
+        //{
+          //  test: /\.(js|jsx)$/,
+          //  exclude: /node_modules/,
+          //  use: []
+        //}
+        ]
     },
     resolve: {
-        extenskons: ['js','jsx']
+        extensions: ['.js','.jsx']
     }
 }
 
