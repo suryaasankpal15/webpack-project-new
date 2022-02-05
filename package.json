@@ -8,15 +8,17 @@
   },
   "babel": {
     "presets": [
-      "env",
-      "stage-2",
-      "react"
+      "babel/preset-env",
+      "babel/preset-react"
     ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^7.1.5",
